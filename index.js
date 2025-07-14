@@ -1,4 +1,4 @@
-//BAD CODE// Your code here
+// Your code here
 
 document.addEventListener('DOMContentLoaded', () => {
     const weatherApp = document.getElementById('weather-app');
@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const API_KEY = '3bf2d8719d95c3ffdd507ee90305830f';
 
     weatherForm.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
         weatherSection.innerHTML = ''; // Clear previous weather data
         const userQuery = weatherSearchInput.value.trim();
@@ -75,5 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
 //<p>Feels like: [feelsLikeTemp]° F</p><br>
 //<p>Last updated: [timeString]</p>
 
+//var queryString = `?units=imperial&appid=[API_KEY]&q=[encodeURIComponent(userQuery)]`
 
 //const mapLink = `https://maps.google.com/?q=[coord.lat],[coord.lon]`;
+
+// const iconUrl = `https://openweathermap.org/img/wn/[iconCode]@2x.png`;
